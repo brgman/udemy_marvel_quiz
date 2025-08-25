@@ -23,7 +23,9 @@
 
     <!-- React and ReactDOM via CDN -->
 
-    <script type="text/babel"JHKKJ>
+    <div id="app"></div>
+
+    <script type="text/babel" JHKKJ>
         class App extends React.Component {
             // render() {
             //     return React.createElement('div', null,
@@ -48,6 +50,14 @@
             //     );
             // }
         }
+
+        // const container = document.getElementById('app');
+        // const root = ReactDOM.createRoot(container);
+        // root.render(<App />);
+
+        // For React 18 and later, use the following code to render the App component:
+        ReactDOM.render(<App />, document.getElementById('app'));
+
     </script>
 </body>
 
