@@ -7,6 +7,7 @@
     <title>Test of react via CDN</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
 
     <!-- React and ReactDOM via CDN -->
 
-    <script>
+    <script type="text/babel"JHKKJ>
         class App extends React.Component {
             // render() {
             //     return React.createElement('div', null,
@@ -38,6 +39,14 @@
                     </div>
                 );
             }
+
+            // Babel https://babeljs.io/setup
+            // render() {
+            //     return React.createElement('div', null,
+            //         React.createElement('h2', null, 'Hello from React via CDN!'),
+            //         React.createElement('p', null, 'This is a simple React component rendered using React and ReactDOM from a CDN.')
+            //     );
+            // }
         }
     </script>
 </body>
