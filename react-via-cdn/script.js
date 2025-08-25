@@ -1,3 +1,12 @@
+function MyApp() {
+    return (
+        <div>
+            <h2>Hello from React via CDN!</h2>
+            <p>This is a simple React component rendered using React and ReactDOM from a CDN.</p>
+        </div>
+    );
+}
+
 class App extends React.Component {
     // render() {
     //     return React.createElement('div', null,
@@ -6,12 +15,7 @@ class App extends React.Component {
     //     );
     // }
     render() {
-        return (
-            <div>
-                <h2>Hello from React via CDN!</h2>
-                <p>This is a simple React component rendered using React and ReactDOM from a CDN.</p>
-            </div>
-        );
+        return (<MyApp />);
     }
 
     // Babel https://babeljs.io/setup
