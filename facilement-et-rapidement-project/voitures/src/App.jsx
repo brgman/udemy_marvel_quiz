@@ -8,7 +8,8 @@ class App extends React.Component {
     return (
       <div>
         hello
-        <Voitures/>
+        <Voitures >
+        </Voitures>
       </div>
     )
   }

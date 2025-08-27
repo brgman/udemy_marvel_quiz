@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import Voiture from './Voiture';
 
 class Voitures extends Component {
     render() {
         return (
-            <div>
-                <h2>Hello world !</h2>
-                <p>Ceci la text</p>
+            <div className="voitures">
+                <h2>Voitures: </h2>
+                <p>marque et couleur</p>
+                <Voiture marque="Renoult" couleur="rouge" />
             </div>
         );
     }
